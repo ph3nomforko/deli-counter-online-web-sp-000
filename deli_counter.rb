@@ -5,10 +5,8 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    puts "The line is currently: "
-    line_position = 1
     katz_deli.each do |position|
-      puts "#{line_position}. #{position} "
+      puts "#{katz_deli[position] + 1}. #{position} "
       line_position += 1
     end
   end
