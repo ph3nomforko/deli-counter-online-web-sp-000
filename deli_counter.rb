@@ -6,8 +6,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each do |position|
-      puts "#{katz_deli[position]}. #{position} "
-      line_position += 1
+      puts " #{position} "
     end
   end
 end
